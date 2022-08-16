@@ -1,0 +1,319 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicalis Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <!-- THINGS TO CHANGE
+    - carousel captions alignment
+    - make section paddings uniform
+    - active effect for nav links
+    - section scrolling not accurate
+    -->
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top cbg-prim" style="box-shadow: 0 0 5px  #291b25;">
+        <div class="container-xxl mx-3">
+            <a href="index.html" class="navbar-brand">
+                <span class="fw-bold fs-sm-5 fs-xs-6 font-prim" style="color: #291b25;">
+                    <img src="/assets/logo_dark.png" alt="logo" width="30">
+                    <p class="h6 d-inline">Musicalis Studio</p>
+                </span>
+            </a>
+            <div>
+                <a class="btn btn-sm d-md-none d-xs-inline col-auto font-sec btn-outline-dark px-3 me-2" role="button" href="login.html">Log In</a>
+            <!--toggle menu for mobile nav-->
+            <button class="navbar-toggler col-auto" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end align-content-center " id="main-nav">
+                <div class="navbar-nav font-sec text-center">
+                  <a class="nav-item nav-link active" aria-current="page" href="#home">Home</a>
+                  <a class="nav-item nav-link" href="#about">About</a>
+                  <a class="nav-item nav-link" href="#services">Services</a>
+                  <a class="nav-item nav-link" href="store.html">Store</a>
+                  <a class="nav-item nav-link" href="dashboard.html">Dashboard</a>
+                  <a class="nav-item nav-link d-md-none" href="enrollment.html">Enrollment</a>
+                  <a class="nav-link d-none d-md-inline btn" style="background: #ffce6d;" href="login.html">Start Learning</a>
+                </div>
+              </div>
+        </div>
+    </nav>
+    <!--nav extension-->
+    <section id="navextend">
+        <div class="container d-md-none font-prim py-1">
+            <div class="row justify-content-center align-content-center">
+                <div class="col text-center">
+                    <a href="#about" class="display-7 text-muted">About Us</a>
+                </div>
+                <div class="col text-center">
+                    <a href="#services" class="display-7 text-muted">Services</a>
+                </div>
+                <div class="col text-center">
+                    <a href="#explore" class="display-7 text-muted">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--titleblock-->
+    <section id="home">
+        <div class="container-fluid p-5 cbg-prim text-center">
+            <div id="title-main" class="font-prim">
+                <h1 class="display-1">Musicalis Music Studio</h1>
+            </div>
+            <div id="title-second" class="font-prim h3">
+                <span style="color:#291b25;">
+                    Piano
+                </span>
+                <span class="accent-1">
+                    &
+                </span>
+                <span style="color:#291b25;">
+                    Violin
+                </span>
+            </div>
+        </div>
+        <!--carousel-->
+        <div class="cbg-dark py-3">
+            <div id="carousel" class="carousel slide container-md" data-bs-ride="false">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="px-lg-4 px-xl-5">
+                    <div class="carousel-inner px-lg-4 px-xl-5">
+                    <div class="carousel-item active">
+                        <img src="assets\unsplash_pianist.png" class="d-block img-fluid w-100" alt="pianist">
+                        <div class="carousel-caption">
+                        <h5 class="font-prim pb-2">"Music empowers the soul"</h5>
+                        <p class="font-sec -md-" style="font-size: 90%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores illo sit labore blanditiis. Adipisci obcaecati quod nihil magni. Magni, fugit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets\unsplash_violinist.png" class="d-block img-fluid w-100" alt="violinist">
+                        <div class="carousel-caption">
+                        <h5 class="font-prim pb-4">Thorough Instruction</h5>
+                        <p class="font-sec -md-" style="font-size: 90%;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum assumenda, id saepe ratione est minus ipsa illo sequi amet sunt?</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets\unsplash_piano&violin.png" class="d-block img-fluid w-100" alt="piano and violin">
+                        <div class="carousel-caption">
+                        <h5 class="font-prim pb-4">Learn the piano and violin the way that suits you.</h5>
+                        <p class="font-sec -md-" style="font-size: 90%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate omnis deserunt enim sed, soluta labore cumque doloremque voluptate error iusto.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--about-->
+    <section id="about" class="cbg-light">
+        <div class="container-lg py-3 py-lg-5 py-4">
+            <div class="container-md pb-2">
+                <div>
+                    <h2 class="display-5 font-prim text-center my-3">About Musicalis</h3>
+                    <p class="font-sec justify-content-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque vero nihil dolorem ipsum voluptate qui soluta unde, voluptatem aliquid nam hic alias enim voluptatibus iure beatae illum nulla eos?</p>
+                    <p class="font-sec justify-content-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur corrupti asperiores quaerat adipisci, maiores natus perferendis nesciunt reprehenderit tempore, illo temporibus molestias corporis deserunt nam similique nulla ducimus, expedita numquam consequuntur fuga enim veniam ullam debitis. Magnam nobis suscipit dolorum?</p>
+                </div>
+                <div class="container-fluid justify-items-center align-items-center">
+                    <div class="mt-4">
+                        <a class="btn btn-sm cbg-grey mx-2" href="#" role="button" data-bs-toggle="modal" data-bs-target="#privacy-modal">Privacy Policy</a>
+                        <a class="btn btn-sm cbg-grey mx-2" href="#" role="button" data-bs-toggle="modal" data-bs-target="#contact-modal" data-bs-whatever="@musicalisstudio">Contact Us</a>
+                    </div>
+                    <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-us" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content cbg-light">
+                        <div class="modal-header">
+                            <h5 class="modal-title ctext-dark font-prim" id="contact-us">Contact the Studio</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body font-sec">
+                            <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" value="@musicalisstudio" class="form-control" id="recipient-name" aria-label="studio email" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            </form>
+                            <hr class=" mt-4">
+                            <div>
+                                <h6 class="font-sec ctext-dark">Or connect through our socials:</h6>
+                                <div class="d-flex justify-content-center align-content-center gap-4">
+                                    <a href="" class="btn rounded-circle p-1">
+                                        <i class="bi bi-facebook text-primary display-4"></i>
+                                    </a>
+                                    <a href="" class="btn rounded-circle p-1">
+                                        <img src="assets\instagram-icon.png" alt="instagram logo" width="38.72rem">
+                                    </a>
+                                    <a href="" class="btn rounded-circle p-1">
+                                        <i class="bi bi-twitter display-4" style="color: #00acee;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn cbg-dark ctext-light" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn cbg-prim ctext-light">Send message</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--services-->
+    <section id="services" class="cbg-prim">
+        <div class="container-lg py-3 py-lg-5 py-4">
+            <div class="text-center">
+                <h2 class="display-5 font-prim text-center my-3">Services</h2>
+                <p class="lead ctext-light font-sec fw-normal">Here are the lesson rates we offer.</p>
+            </div>
+            <div class="row mb-5 align-content-center justify-content-center g-3">
+                <div class="col-8 col-md-4 my-3">
+                    <div class="card cbg-light">
+                        <div class="card-body text-center py-4 ctext-dark">
+                            <h4 class="card-title">Regular Lessons</h4>
+                            <p class="card-subtitle fw-light">Base Price for Violin/Piano Lessons</p>
+                            <p class="display-6 my-4 fw-bold">P400/hr</p>
+                            <p class="card-text mx-3 text-muted d-none d-lg-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="login.html" class="btn btn-outline-danger btn-lg mt-3">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-md-4 my-3">
+                    <div class="card cbg-light border-2">
+                        <div class="card-header text-center accent-2"><i class="bi bi-stars"></i>Most Popular</div>
+                        <div class="card-body text-center py-4 ctext-dark">
+                            <h4 class="card-title">Single-Pay Package</h4>
+                            <p class="card-subtitle fw-light">10 Hours of Piano/Violin Lessons</p>
+                            <p class="display-6 mt-4 mb-0 fw-bold">P350/hr</p>
+                            <p class="fw-lighter accent-2 mb-4 mx-2" style="font-size:x-small">(Paid as P3500 upfront)</p>
+                            <p class="card-text mx-3 text-muted d-none d-lg-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="login.html" class="btn btn-outline-danger btn-lg mt-3">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-4 my-3">
+                    <div class="card cbg-light">
+                        <div class="card-body text-center py-4 ctext-dark">
+                            <h4 class="card-title">Sibling Promo</h4>
+                            <p class="card-subtitle fw-light">Discounted rate for two or more siblings</p>
+                            <p class="display-6 mt-4 mb-0 fw-bold">P380/hr</p>
+                            <p class="fw-lighter accent-2 mb- mx-2" style="font-size:x-small">(P20 off for every additional sibling enrolled)</p>
+                            <p class="card-text mx-3 text-muted d-none d-lg-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="login.html" class="btn btn-outline-danger btn-lg mt-3">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--explore-->
+    <section id="explore" class="cbg-light">
+        <div class="container-lg py-3 py-lg-5 py-4">
+            <div class="text-center mb-4">
+                <h2 class="display-5 font-prim text-center my-3">Explore</h2>
+                <p class="lead ctext-dark font-sec fw-normal">Have a look at our website!</p>
+            </div>
+            <div class="d-flex m-4 mx-md-5 gap-4 gap-md-5 row-6 justify-content-center align-content-center">
+                <a href="" class="btn cbg-dark ctext-light col-sm-3 col-md-2" role="button">Store</a>
+                <a href="" class="btn cbg-dark ctext-light col-sm-3 col-md-2" role="button">Dashboard</a>
+                <a href="" class="btn cbg-dark ctext-light col-sm-3 col-md-2" role="button" data-bs-toggle="modal" data-bs-target="#contact-modal" data-bs-whatever="@musicalisstudio">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <div class="container-fluid cbg-dark p-5">
+            <div class="container-lg d-flex justify-content-between">
+                <div>
+                    <a href="index.html" style="text-decoration:none">
+                        <span class="fw-bold fs-sm-5 fs-xs-6 font-prim ctext-light fs-5">
+                            <img src="/assets/logo_secondary.png" alt="logo" width="30">
+                            <p class="d-inline">Musicalis Studio</p>
+                        </span>
+                        <div id="title-second" class="font-prim mt-1" style="font-size: small;">
+                            <span class="ctext-light">
+                                Piano
+                            </span>
+                            <span class="accent-1">
+                                &
+                            </span>
+                            <span class="ctext-light">
+                                Violin
+                            </span>
+                        </div>
+                    </a>
+                    <p class="fw-light font-sec text-uppercase ctext-light my-3" style="font-size: x-small;">Villacin Family</p>
+                </div>
+                <div class="font-sec ctext-light text-end">
+                    <div>
+                        <a href="#" class="text-uppercase" style="text-decoration:none; font-size: smaller;" data-bs-toggle="modal" data-bs-target="#privacy-modal">privacy policy</a>
+                        <div class="modal fade" id="privacy-modal" tabindex="-1" aria-labelledby="privacy-policy" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-scrollable">
+                                <div class="modal-content cbg-light">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title ctext-dark font-prim" id="privacy-policy">Privacy Policy</h5>
+                                    <button type="button" class="btn-close ctext-grey" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body font-sec ctext-dark text-start">
+                                        <h4>COLLECTION OF PERSONAL INFORMATION</h4>
+                                        <p>Musicalis Music Studio automatically collects and/or tracks (1) the home server domain names, e-mail addresses, type of client computer, and type of Web browser of visitors to Musicalis Music Studio’s Web site, (2) the e-mail addresses of visitors that communicate with Musicalis Music Studio via e-mail, (3) information that you voluntarily provide such as your name, address, phone number, place of birth, date of birth, nationality, gender, educational and work experience, and e-mail address and (4) user-specific information on what pages visitors access.</p>
+                                        <p>Musicalis Music Studio may place an Internet cookie on a visitor's hard drive. The Internet cookie may save some or all of the following information: the visitor’s name, email address, shopping cart, screen preferences, the pages of the Web site viewed by the visitor, and the advertisements viewed or clicked by the visitor. Internet cookies never store payment information, dollar amounts, or any transaction data. Internet cookies are stored on the visitor’s hard drive and are not stored, in any form, by Musicalis Music Studio. Visitors may decline the Internet cookie by using the appropriate feature of their Web client software, if available.</p>
+                                        <p>From time to time, Musicalis Music Studio may conduct various contests, sweepstakes, or other special offers. To the extent visitors choose to participate in a contest, sweepstakes, or special offer (“Promotions”) through www.schoolofrock.com or any other site affiliated with Musicalis Music Studio, Musicalis Music Studio may ask participants to submit certain personal identifying information, such as the participant’s name, address, age and other information in connection with that offering. This information may be used to contact the participant or to provide the participant or other users with a more personalized service going forward. The information collected from Promotions shall be processed in accordance with this Privacy Policy. </p>
+                                        <h4>USE OF PERSONAL DATA COLLECTED</h4>
+                                        <p>Personal data collected by Musicalis Music Studio may be used by Musicalis Music Studio for editorial and feedback purposes, for marketing and promotional purposes, for a statistical analysis of users’ behavior, for service development, for content improvement, and to customize content and layout of Musicalis Music Studio’s site. Musicalis Music Studio may use the information you provide about yourself to fulfill your requests for our services, to respond to your inquiries about our offerings, to offer you other programs or services that we believe may be of interest to you. Data on visitors’ home servers is aggregated for internal review and then discarded. Names, postal and e-mail addresses, and phone numbers collected may be added to Musicalis Music Studio’s databases and used for future calls and mailings regarding site updates, new services or upcoming events.</p>
+                                        <h4>DISCLOSURE OF PERSONAL DATA TO THIRD PARTIES</h4>
+                                        <p>Musicalis Music Studio does not rent or sell personal data, but will not obtain visitor’s consent before sharing or otherwise disclosing data to third parties. Musicalis Music Studio will only disclose to third parties information knowingly and voluntarily disclosed by visitors. Musicalis Music Studio may use or disclose the information you provide about yourself to our contractors, agents and suppliers to fulfill your requests for our services or in connection with the operation of this site or any Promotions. We may disclose personally identifiable information in response to legal process, for example, in response to a court order or a subpoena. We also may disclose such information in response to a law enforcement agency’s request.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi at quidem corrupti velit? Ullam voluptates dolores, quo amet nesciunt, cumque ratione a sapiente ipsum tempore, incidunt obcaecati. Nostrum, eos nulla.</p>
+                                    </div>
+                                    <div class="modal-footer ctext-dark">
+                                    <button type="button" class="btn cbg-dark ctext-light" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-content-center gap-4 my-3">
+                        <a href="">
+                            <i class="bi bi-facebook text-primary" style="font-size: large;"></i>
+                        </a>
+                        <a href="">
+                            <img src="assets\instagram-icon.png" alt="instagram logo" width="19rem">
+                        </a>
+                        <a href="">
+                            <i class="bi bi-twitter" style="color: #00acee; font-size: large;"></i>
+                        </a>
+                    </div>
+                    <a href="" class="text-uppercase" style="font-size: x-small; text-decoration: none;">Website by <br>Tim Leobert E. Villacin</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-black p-2"></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
